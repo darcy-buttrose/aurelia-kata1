@@ -1,0 +1,25 @@
+{
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "aurelia/bootstrapper": "github:aurelia/bootstrapper@^0.12.0",
+      "aurelia/dependency-injection": "github:aurelia/dependency-injection@^0.7.1",
+      "aurelia/framework": "github:aurelia/framework@^0.11.0",
+      "aurelia/http-client": "github:aurelia/http-client@^0.8.1",
+      "aurelia/router": "github:aurelia/router@^0.8.1",
+      "font-awesome": "npm:font-awesome@^4.3.0",
+      "fs-plus": "npm:fs-plus@^2.8.0",
+      "fs-promise": "npm:fs-promise@^0.3.1",
+      "fsplus": "npm:fsplus@^0.1.0",
+      "jasmine": "npm:jasmine@^2.3.1",
+      "jasmine-reporters": "npm:jasmine-reporters@^2.0.6",
+      "twbs/bootstrap": "github:twbs/bootstrap@^3.3.4",
+      "underscore-plus": "npm:underscore-plus@^1.6.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.11",
+      "babel-runtime": "npm:babel-runtime@^5.1.11",
+      "core-js": "npm:core-js@^0.8.4"
+    }
+  }
+}

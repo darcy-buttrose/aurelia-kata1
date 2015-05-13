@@ -1,0 +1,4 @@
+{
+  "specDir": "./",
+  "specFiles": "\\.[sS]pec\\.js$"
+}
