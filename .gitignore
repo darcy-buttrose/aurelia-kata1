@@ -1,3 +1,6 @@
 jspm_packages/*/*
 jspm_packages/*
 jspm_packages
+node_modules/*/*
+node_modules/*
+node_modules

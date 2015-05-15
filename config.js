@@ -9,7 +9,6 @@ System.config({
     "modules": "system"
   },
   "paths": {
-    "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   }
@@ -17,22 +16,30 @@ System.config({
 
 System.config({
   "map": {
+    "aurelia-animator-css": "github:aurelia/animator-css@0.2.0",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.12.0",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.7.1",
     "aurelia-framework": "github:aurelia/framework@0.11.0",
     "aurelia-http-client": "github:aurelia/http-client@0.8.1",
     "aurelia-router": "github:aurelia/router@0.8.1",
+    "aurelia/animator-css": "github:aurelia/animator-css@0.2.0",
+    "aurelia/http-client": "github:aurelia/http-client@0.8.1",
     "babel": "npm:babel-core@5.3.1",
     "babel-runtime": "npm:babel-runtime@5.3.1",
+    "bootstrap": "github:twbs/bootstrap@3.3.4",
     "core-js": "npm:core-js@0.9.6",
+    "css": "github:systemjs/plugin-css@0.1.10",
     "font-awesome": "npm:font-awesome@4.3.0",
     "fs-plus": "npm:fs-plus@2.8.0",
     "fs-promise": "npm:fs-promise@0.3.1",
     "fsplus": "npm:fsplus@0.1.0",
     "jasmine": "npm:jasmine@2.3.1",
     "jasmine-reporters": "npm:jasmine-reporters@2.0.6",
-    "bootstrap": "github:twbs/bootstrap@3.3.4",
+    "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.10",
     "underscore-plus": "npm:underscore-plus@1.6.6",
+    "github:aurelia/animator-css@0.2.0": {
+      "aurelia-templating": "github:aurelia/templating@0.11.2"
+    },
     "github:aurelia/binding@0.6.1": {
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.7.1",
       "aurelia-metadata": "github:aurelia/metadata@0.5.0",

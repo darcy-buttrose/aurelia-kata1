@@ -1,0 +1,21 @@
+<template>
+    <section class="au-animate">
+        <h2>${heading}</h2>
+
+        <form role="form" submit.delegate="welcome()">
+            <div class="form-group">
+                <label for="inv">Invest</label>
+                <input type="number" value.bind="invest" class="form-control" id="inv" placeholder="investment value">
+            </div>
+            <div class="form-group">
+                <label for="comb">Combination</label>
+                <input type="number" value.bind="combination" class="form-control" id="comb" placeholder="combination">
+            </div>
+            <div class="form-group">
+                <label>Projected Pay</label>
+                <p class="help-block">${ProjectedPay}</p>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </section>
+</template>
