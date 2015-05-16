@@ -7,6 +7,6 @@ export class ProjectedPayCalculator {
     }
 
     calculate(a,b) {
-        return a + b;
+        return Number(a) * Number(b);
     }
 }

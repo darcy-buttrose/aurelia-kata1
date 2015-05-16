@@ -12,9 +12,10 @@ export class Test {
 
     load () {
         describe('ProjectedPayCalculator',() => {
-            it('should combine invest with combination', () => {
+            it('should multiply invest with combination', () => {
                 let calculatorUnderTest = new ProjectedPayCalculator();
-                expect(calculatorUnderTest.calculate(1,2)).toBe(3);
+                expect(calculatorUnderTest.calculate(1,2)).toBe(2);
+                expect(calculatorUnderTest.calculate(2,2)).toBe(4);
             });
         });
     }
