@@ -2,15 +2,20 @@
  * Created by Darcy on 10/05/2015.
  */
 import Jasmine from 'jasmine';
-import JasmineReporters from 'jasmine-reporters';
+//import JasmineReporters from 'jasmine-reporters';
+import SpecReporter from 'jasmine-spec-reporter';
 import fs from 'fs-plus';
 import fp from 'fsplus';
 
 var jasmine = new Jasmine();
+/*
 jasmine.env.addReporter(new JasmineReporters.TerminalReporter({
     color: true,
     showStack: false
 }));
+*/
+var reporter = new SpecReporter();
+jasmine.env.addReporter(reporter);
 
 let specCount=0;
 let config = fp.readJSON('./testRunner.json');

@@ -37,6 +37,7 @@ System.config({
     "fsplus": "npm:fsplus@0.1.0",
     "jasmine": "npm:jasmine@2.3.1",
     "jasmine-reporters": "npm:jasmine-reporters@2.0.6",
+    "jasmine-spec-reporter": "npm:jasmine-spec-reporter@2.2.1",
     "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.10",
     "underscore-plus": "npm:underscore-plus@1.6.6",
     "github:aurelia/animator-css@0.2.0": {
@@ -266,6 +267,9 @@ System.config({
       "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:colors@1.1.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:commander@2.6.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.0",
@@ -390,6 +394,10 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "mkdirp": "npm:mkdirp@0.3.5",
       "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:jasmine-spec-reporter@2.2.1": {
+      "colors": "npm:colors@1.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:jasmine@2.3.1": {
