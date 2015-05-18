@@ -4,7 +4,8 @@
 import {ProjectedPayCalculator} from 'calculators/ProjectedPayCalculator';
 
 export class Test {
-    constructor(env) {
+    constructor(jasmine) {
+        let env = jasmine.env;
         describe = env.describe;
         it = env.it;
         expect = env.expect;

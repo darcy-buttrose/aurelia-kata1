@@ -15,8 +15,11 @@ jasmine.env.addReporter(new JasmineReporters.TerminalReporter({
 let specCount=0;
 let config = fp.readJSON('./testRunner.json');
 let specFiles = new RegExp(config.specFiles);
+let specDir = config.specDir;
 
-console.log('isDir=' + fs.isDirectorySync(config.specDir));
+console.log('paths=' + JSON.stringify(System.paths));
+console.log('specDir=' + specDir + 'isDir=' + fs.isDirectorySync(specDir));
+console.log('specFiles=' + specFiles);
 
 fs.listSync(config.specDir).forEach((fileName) => {
     if (fs.isFileSync(fileName)) {
@@ -29,7 +32,7 @@ fs.listSync(config.specDir).forEach((fileName) => {
 
             specCount++;
             System.import(moduleName).then((_Test) => {
-                let tst = new _Test.Test(jasmine.env);
+                let tst = new _Test.Test(jasmine);
                 tst.load();
                 specCount--;
                 if (specCount == 0) {

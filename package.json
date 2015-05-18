@@ -2,6 +2,7 @@
   "jspm": {
     "directories": {},
     "dependencies": {
+      "angular/di.js": "github:angular/di.js@master",
       "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.12.0",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.7.1",
       "aurelia-framework": "github:aurelia/framework@^0.11.0",

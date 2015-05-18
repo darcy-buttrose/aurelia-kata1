@@ -10,7 +10,8 @@ System.config({
   },
   "paths": {
     "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
+    "npm:*": "jspm_packages/npm/*.js",
+    "*": "*.js"
   }
 });
 
@@ -272,9 +273,6 @@ System.config({
     },
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
-    },
-    "npm:core-js@0.8.4": {
-      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:core-js@0.9.6": {
       "process": "github:jspm/nodelibs-process@0.1.1"
