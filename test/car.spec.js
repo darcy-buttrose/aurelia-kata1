@@ -22,7 +22,6 @@ export class Test {
         describe('Car', () => {
             it('should rev engine on start', () => {
                 let engine = this.createSpyObj('Engine',['rev']);
-                console.log('engine=>' + JSON.stringify(engine));
                 let car = new Car(engine);
                 car.start();
                 expect(engine.rev).toHaveBeenCalled();

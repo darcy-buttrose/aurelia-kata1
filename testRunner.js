@@ -17,18 +17,12 @@ let config = fp.readJSON('./testRunner.json');
 let specFiles = new RegExp(config.specFiles);
 let specDir = config.specDir;
 
-console.log('paths=' + JSON.stringify(System.paths));
-console.log('specDir=' + specDir + 'isDir=' + fs.isDirectorySync(specDir));
-console.log('specFiles=' + specFiles);
-
 fs.listSync(config.specDir).forEach((fileName) => {
     if (fs.isFileSync(fileName)) {
         if (specFiles.test(fileName)) {
             let moduleName = fileName.replace(/\.js$/,'');
             moduleName = moduleName.replace(/\\/,'/');
             moduleName = './' + moduleName;
-
-            console.log('module=[' + moduleName + ']');
 
             specCount++;
             System.import(moduleName).then((_Test) => {
